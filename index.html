@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cassandra Ramirez - Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#experience">Professional Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
+
+    <!-- About Section -->
+    <div class="about-content" id="home">
+        <h1 style="margin-bottom: 40px;">Hey, Nice to Meet You!</h1>
+        <div class="center-text">
+            <h2 style="margin-bottom: 40px;">
+                <p>I'm Cassandra Ramirez, and I'm currently open to work.</p>
+                <p>I hold a prestigious academic position at the University of California, San Diego,</p>
+                <p>and I bring a wealth of experience in the field of sales.</p>
+            </h2>
+        </div>
+        <div class="rounded-image">
+            <img src="Cass Headshot.JPG" alt="Cassandra Ramirez Headshot" width="250">
+    </div>
+</div> 
+<img src="handshake.png" class="card-img-custom" alt="Sales Icon">
+<h3><strong>Experience</strong></h3>
+<p>
+        <li>Achieved top sales status by leading a team of ten in strategic sales initiatives</li>
+        <li>Developed and implemented innovative marketing strategies, boosting brand visibility</li>
+        <li>Excelled in financial analysis roles, contributing to significant revenue growth</li>
+        <li>Fostered strong relationships with key clients, enhancing customer satisfaction</li>
+</p>
+</div>
+<img src="satisfaction.png" class="card-img-custom" alt="Sales Icon">
+<h3>Expertise</h3>
+    <p>
+        <li>Sales Strategy Development</li>
+        <li>Performance Evaluation and Coaching</li>
+        <li>Proficiency with CRM Software</li>
+        <li>Team Management and Building</li>
+        <li>Marketing and Lead Generation</li>
+        <li>Languages: English, Spanish</li>
+    </p>
+    <img src="trophy.png" class="card-img-custom" alt="Sales Icon">
+
+    <h3>Achievements</h3>
+    <p>
+        <li>Loan Coordinator of the Month award for 3 consecutive months</li>
+        <li>Record for commission earned in a single week</li>
+        <li>Top 2 Loan Coordinators in closed loans from live transfers</li>
+        <li>Managed both a remote office in Iowa and an in-person team</li>
+        <li>Fastest promoted Manager at Prospect</li>
+    </p>
+</div>
+</div>
+</section>
+
+<div class="container">
+    <section id="experience">
+        <h3 style="margin-top: 25px;">ABOUT ME</h3>
+        <p>Currently in my senior year at the University of California, San Diego, I am set to graduate with a Bachelor of Science
+            in International Relations and International Business in June 2024. My academic pursuits have always been paralleled by 
+            hands-on professional experiences, allowing me to delve into two worlds simultaneously. This dual exposure has not only honed my theoretical understanding but also sharpened my practical skills, making me a well-rounded candidate for international roles.</p>
+        <img src="images/banner.png" alt="Banner Image" width="400">
+    </section>
+
+    <div class="container">
+        <!-- First Card -->
+        <div class="card">
+            <img src="resume.png" class="card-img-custom" alt="Resume Icon">
+            <div class="card-body">
+                <h5 class="card-title">View my Resume</h5>
+                <div class="resume-link">
+                    <a href="COGS3Resume.pdf" target="_blank">Access PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Card -->
+        <div class="card">
+            <img src="cv.png" class="card-img-custom card-img-top" alt="CV Icon">
+            <div class="card-body">
+                <h5 class="card-title">View My Cover Letter</h5>
+                <div class="cover-letter-link">
+                    <a href="CV.pdf" target="_blank">Access PDF</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4>"Consistently surpassed sales targets, led a team of 15 loan coordinators to achieve company milestones, developed sales strategies, managed daily outbound calls, facilitated inter-departmental collaboration, maintained a client lead pipeline, and oversaw team performance, training, and recruitment in the sales department.""
+        - Former Employer
+    </h4>
+
+    <div class="contact-form" id="contact">
+        <h2>Let's Get in Touch</h2>
+        <form action="/submit-form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="purpose">Purpose of Contact:</label>
+            <select id="purpose" name="purpose">
+                <option value="job_offer">Job Offer</option>
+                <option value="meeting">Schedule a Meeting</option>
+                <option value="general_query">General Query</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <label for="preferred_time">Preferred Time for Contact:</label>
+            <input type="text" id="preferred_time" name="preferred_time" placeholder="e.g., Weekdays after 5 PM">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+2023 All Rights Reserved    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
